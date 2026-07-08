@@ -1,0 +1,11 @@
+# The diamond Problem using MRO in Python
+class A:
+    pass
+class B(A):
+    pass
+class C(A):
+    pass
+class D(B, C):
+    pass
+c = D()
+print(D.mro())
